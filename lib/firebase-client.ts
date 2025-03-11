@@ -20,15 +20,13 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:
-    process.env.NEXT_PUBLIC_FIREBASE_API_KEY ||
-    'AIzaSyBYlgxa7fh1kSnKZJ3HJUe9wRtr9qK7p0o',
-  authDomain: 'clinicplus-4c9a4.firebaseapp.com',
-  projectId: 'clinicplus-4c9a4',
-  storageBucket: 'clinicplus-4c9a4.firebasestorage.app',
-  messagingSenderId: '1061869358562',
-  appId: '1:1061869358562:web:8f4f6669fae7cbf8c0bdbb',
-  measurementId: 'G-V2S9V3FL7D',
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: `1:${process.env.NEXT_PUBLIC_FIREBASE_APP_ID}:web:8f4f6669fae7cbf8c0bdbb`,
+  measurementId: process.env.NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase - simplified to ensure consistent initialization
