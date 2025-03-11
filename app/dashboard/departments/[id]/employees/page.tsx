@@ -303,7 +303,7 @@ export default function ManageDepartmentEmployeesPage({ params }: { params: { id
       (employee.email && employee.email.toLowerCase().includes(searchTerm.toLowerCase()))
     )
   }
-\
+
   return (
     <div className="container mx-auto px-4 py-8">
       <div className="flex items-center mb-6">
