@@ -57,11 +57,15 @@ interface EmployeeAppointment {
   updatedAt: any;
 }
 
+interface AppointmentDetailsPageProps {
+  params: {
+    id: string;
+  };
+}
+
 export default function AppointmentDetailsPage({
   params,
-}: {
-  params: { id: string };
-}) {
+}: AppointmentDetailsPageProps) {
   const router = useRouter();
   const [appointment, setAppointment] = useState<Appointment | null>(null);
   const [employees, setEmployees] = useState<Employee[]>([]);
